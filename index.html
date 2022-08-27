@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear - Ecommerce</title>
+
+    <!-- 
+    - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg+xml">
+
+    <!-- Load styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Load Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- Souris -->
+    <!-- <div class="souris" data-souris></div> -->
+
+     <!-- Overlay -->
+    <div class="overlay" data-overlay></div>
+    
+    <!-- Menu mobile-->
+    <div class="mobile-menu" data-mobile-menu>
+        <div class="mobile-menu-title-container">
+            <h1 class="mobile-menu-title">gear</h1>
+            <ion-icon name="close-outline" data-close-menu aria-label="Fermer"/>
+        </div>
+
+        <nav class="mobile-menu-navigation">
+            <ul class="menu-top-list">
+                <li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Acceuil</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Collection</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Shop</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Offres</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Blog</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </div>
+
+    <!-- Menu mobile Fixe-->
+    <div class="mobile-menu-top-fixed" data-mobile-menu-top-fixed>
+        <div class="search-container-input">
+            <input type="text" class="search-field" placeholder="Rechercher un produit">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        </div>
+
+        <button aria-label="Ouvrir le menu" class="nav-open-btn" aria-label="open menu" data-nav-toggler-fixed>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+
+        <div class="header-cointainer-logo" header-logo>
+            <!-- <img src="" alt="" class="header-logo"> -->
+            <h1 class="header-logo" > <a href="#">gear</a></h1>
+        </div>
+        <div class="header-user-actions">
+             <button class="action-btn ">
+                <ion-icon name="person-outline"></ion-icon>
+              </button>
+              <button class="action-btn hide">
+                <ion-icon name="star-outline "></ion-icon>
+                <span class="count">0</span>
+              </button>
+              <button class="action-btn hide">
+                <ion-icon name="bag-handle-outline "></ion-icon>
+                <span class="count">0</span>
+              </button>
+        </div>
+ 
+    </div>
+
+    <!-- Destop menu fixe -->
+    <div class="desktop-menu-top-fixed">
+        <nav class="menu-top">
+            <ul class="menu-top-list">
+                <li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Acceuil</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Collection</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Shop</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Offres</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Blog</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 
+        - HEADER 
+    -->
+    <header>
+
+        <div class="header-top">
+            <p class="header-top-alerts">livraison gratuite partout pour <b>+ 20</b> $</p>
+        </div>   
+
+        <div class="header-main">
+            <div class="search-container-input">
+                <input type="text" class="search-field" placeholder="Rechercher un produit">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+            </div>
+
+            <button aria-label="Ouvrir le menu" class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="header-cointainer-logo">
+                <!-- <img src="" alt="" class="header-logo"> -->
+                <h1 class="header-logo"> <a href="#">gear</a></h1>
+            </div>
+            <div class="header-user-actions">
+                 <button class="action-btn ">
+                    <ion-icon name="person-outline"></ion-icon>
+                  </button>
+                  <button class="action-btn hide">
+                    <ion-icon name="star-outline "></ion-icon>
+                    <span class="count">0</span>
+                  </button>
+                  <button class="action-btn hide">
+                    <ion-icon name="bag-handle-outline "></ion-icon>
+                    <span class="count">0</span>
+                  </button>
+            </div>
+     
+        </div>
+
+        <nav class="desktop-menu-top">
+            <ul class="menu-top-list">
+                <li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Acceuil</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Collection</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Shop</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Offres</a>
+                </li><li class="menu-top-list-item">
+                    <a href="#" class="list-item-url">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- 
+            - BANNER 
+        -->
+        <div class="banner has-scrollbar">
+
+            <div class="banner-item">
+                <img src="./assets/images/hero-banner-1.jpg" alt="
+                Révéler le
+                Beauté de la peau" class="banner-img">
+                <div class="banner-item-content">
+                    <h1 class="banner-item-title" >
+                        Révéler le
+                        Beauté de la peau</h1>
+                    <p class="banner-item-text">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
+                    <span class="banner-item-subtext">    
+                        À partir de 7,99 $
+                    </span>
+                </div>
+                <button class="banner-item-btn" >
+                    Commander
+                </button>
+            </div>
+
+            <div class="banner-item">
+                <img src="./assets/images/hero-banner-2.jpg" alt="
+                Révéler le
+                Beauté de la peau" class="banner-img">
+                <div class="banner-item-content">
+                    <h1 class="banner-item-title">
+                        Révéler le
+                        Beauté de la peau</h1>
+                    <p class="banner-item-text">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
+                    <span class="banner-item-subtext">    
+                        À partir de 7,99 $
+                    </span>
+                </div>
+                <button class="banner-item-btn">
+                    Commander
+                </button>
+            </div>
+
+            <div class="banner-item">
+                <img src="./assets/images/hero-banner-3.jpg" alt="
+                Révéler le
+                Beauté de la peau" class="banner-img">
+                <div class="banner-item-content">
+                    <h1 class="banner-item-title">
+                        Révéler le
+                        Beauté de la peau</h1>
+                    <p class="banner-item-text">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
+                    <span class="banner-item-subtext">    
+                        À partir de 7,99 $
+                    </span>
+                </div>
+                <button class="banner-item-btn">
+                    Commander
+                </button>
+            </div>
+
+        </div>
+
+        <div class="product-collection">
+            <div class="collection-item has-before hover:shine">
+                <img src="./assets/images/collection-1.jpg" alt="Collection d'été" class="collection-img">
+                <div class="collection-content">
+                    <h1 class="collection-title">collection d'été
+                    </h1>
+                    <p class="collection-start">A partir de 2$</p>
+                    
+                    <a class="collection-btn">
+                        <p>
+                            Commander
+                        </p>
+                        <ion-icon name="arrow-forward"></ion-icon> 
+                    </a>
+                </div>
+            </div><div class="collection-item">
+                <img src="./assets/images/collection-2.jpg" alt="Collection d'été" class="collection-img">
+                <div class="collection-content">
+                    <h1 class="collection-title">quoi de neuf?
+
+                    </h1>
+                    <p class="collection-start">A partir de 2$</p>
+                    <a class="collection-btn">
+                        <p>
+                            découvrir 
+                        </p>
+                        <ion-icon name="arrow-forward"></ion-icon> 
+
+                    </a>
+                </div>
+            </div><div class="collection-item">
+                <img src="./assets/images/collection-3.jpg" alt="Collection d'été" class="collection-img">
+                <div class="collection-content">
+                    <h1 class="collection-title">Buy 1 Get 1
+                    </h1>
+                    <p class="collection-start">A partir de 2$</p>
+                    <a class="collection-btn">
+                        <p>
+                            découvrir
+                        </p>
+                        <ion-icon name="arrow-forward"></ion-icon> 
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-best-sellers">
+            <div class="best-sellers-item">
+                <img src="./assets/images/product-01.jpg" alt="" class="best-sellers-img">
+                <div class="best-sellers-content">
+                    <div class="price">
+                        <p class="old-price">$39.00</p>
+                        <p class="new-price">$29.00</p>
+                    </div>
+                    <a href="#" class="best-sellers-title">Nettoyant pour le visage</a>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <p class="count">510 notes</p>
+                    </div>
+                </div>
+
+            </div><div class="best-sellers-item">
+                <img src="./assets/images/product-02.jpg" alt="" class="best-sellers-img">
+                <div class="best-sellers-content">
+                    <div class="price">
+                        <p class="old-price">$39.00</p>
+                        <p class="new-price">$29.00</p>
+                    </div>
+                    <a href="#" class="best-sellers-title">
+                        Sérum Rajeunissant Bio-champignons</a>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <p class="count">510 notes</p>
+                    </div>
+                </div>
+
+            </div><div class="best-sellers-item">
+                <img src="./assets/images/product-03.jpg" alt="" class="best-sellers-img">
+                <div class="best-sellers-content">
+                    <div class="price">
+                        <p class="old-price">$39.00</p>
+                        <p class="new-price">$29.00</p>
+                    </div>
+                    <a href="#" class="best-sellers-title">Crème pour les yeux à la caféine aux grains de café</a>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <p class="count">510 notes</p>
+                    </div>
+                </div>
+
+            </div><div class="best-sellers-item">
+                <img src="./assets/images/product-04.jpg" alt="" class="best-sellers-img">
+                <div class="best-sellers-content">
+                    <div class="price">
+                        <p class="old-price">$39.00</p>
+                        <p class="new-price">$29.00</p>
+                    </div>
+                    <a href="#" class="best-sellers-title">Facial cleanser</a>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <p class="count">510 notes</p>
+                    </div>
+                </div>
+
+            </div><div class="best-sellers-item">
+                <img src="./assets/images/product-05.jpg" alt="" class="best-sellers-img">
+                <div class="best-sellers-content">
+                    <div class="price">
+                        <p class="old-price">$39.00</p>
+                        <p class="new-price">$29.00</p>
+                    </div>
+                    <a href="#" class="best-sellers-title">Coffee Bean Caffeine Eye Cream</a>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <p class="count">510 notes</p>
+                    </div>
+                </div>
+
+            </div><div class="best-sellers-item">
+                <img src="./assets/images/product-06.jpg" alt="" class="best-sellers-img">
+                <div class="best-sellers-content">
+                    <div class="price">
+                        <p class="old-price">$39.00</p>
+                        <p class="new-price">$29.00</p>
+                    </div>
+                    <a href="#" class="best-sellers-title">Nettoyant pour le visage</a>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <p class="count">510 notes</p>
+                    </div>
+                </div>
+
+            </div><div class="best-sellers-item">
+                <img src="./assets/images/product-07.jpg" alt="" class="best-sellers-img">
+                <div class="best-sellers-content">
+                    <div class="price">
+                        <p class="old-price">$39.00</p>
+                        <p class="new-price">$29.00</p>
+                    </div>
+                    <a href="#" class="best-sellers-title">Nettoyant pour le visage</a>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <p class="count">510 notes</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* RESET
+    1*Supprimer les margin et padding
+    2*Ajuster les largeur avec box sizing
+*/
+
+
+/* 1- */
+
+* {
+    margin : 0;
+    padding : 0 ;
+    /* transition : all 0.5s ease; */
+}
+
+/* 2 */
+* , *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+
+
