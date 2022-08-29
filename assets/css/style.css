@@ -51,8 +51,7 @@
   height: 300vh;
   position: relative;
   pointer-events: all;
-  transition: all 1s ease;
- }
+}
 
 body::-webkit-scrollbar { width: 15px; }
 
@@ -337,7 +336,17 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
     * MAIN 
  */
 
+
+
 /* BANNER */
+
+
+  @keyframes animationall {
+   0% {   transform: translateY(-100px); }
+   100% { transform: translateY(0px);  }
+ }
+
+
 main{
   margin:10px 20px;
 }
@@ -349,6 +358,8 @@ main{
   scroll-snap-type: inline mandatory;
   height: 500px;
   margin-bottom: 20px;
+  animation: animationall 1s ease-in-out;
+
 }
 
 .banner .banner-item{
@@ -497,6 +508,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: animationall 1s ease-in-out;
 }
 
 .product-collection .collection-item{
