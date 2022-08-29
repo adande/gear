@@ -34,6 +34,18 @@ const headerActive = function () {
 window.addEventListener('scroll',headerActive);
 
 
+// Mobile menu sticky
+const menu_desktop = document.querySelector("[data-desktop-menu-top-fixed]");
+const headerActiveDesktop = function () {
+    if (window.scrollY > 250) {
+        menu_desktop.classList.add('active');
+    }else{
+        menu_desktop.classList.remove('active');
+    }
+}
+window.addEventListener('scroll',headerActiveDesktop);
+
+
 // Souris
 // const souris = document.querySelector('[data-souris]');
 // const cursor = function (e) {

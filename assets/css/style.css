@@ -15,6 +15,12 @@
 @import url('./reset.css');
 
 /**
+ * Import media queries css 
+ */
+ @import url('./responsive.css');
+
+ 
+/**
  * Styles default 
  */
 
@@ -45,6 +51,7 @@
   height: 300vh;
   position: relative;
   pointer-events: all;
+  transition: all 1s ease;
  }
 
 body::-webkit-scrollbar { width: 15px; }
@@ -158,20 +165,20 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   width:100%;
  }
 
- .menu-top-list{
+ .mobile-menu-navigation .menu-top-list{
   display:flex;
   flex-direction:column;
   width:100%;
  }
  
- .menu-top-list li {
+ .mobile-menu-navigation .menu-top-list li {
   width:100%;
 	/* box-shadow: 0px 2px 0px rgba(0,0,0,0.2); */
   transition: all 500ms ease-in-out;
   position:relative;
  }
  
- .menu-top-list li a{
+ .mobile-menu-navigation .menu-top-list li a{
   text-align: left;
   display: block;
   width: 100%;
@@ -180,12 +187,12 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   position:relative;
  }
 
- .menu-top-list li:hover{
+ .mobile-menu-navigation .menu-top-list li:hover{
   background:var(--black);
   margin-left:10px;
 }
 
-.menu-top-list li:hover .list-item-url{
+.mobile-menu-navigation .menu-top-list li:hover .list-item-url{
   font-size: var(--fs-3);
   color: var(--white);
   padding-left:20px;
@@ -193,7 +200,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   animation: moving 1s ease-in-out;
   }
   
-  .menu-top-list li:hover .list-item-url::after{
+  .mobile-menu-navigation .menu-top-list li:hover .list-item-url::after{
     color:var(--pale-spring-bud);
     margin-left:20px;
   }
@@ -271,6 +278,10 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   background:var(--white);
   border:none;
   cursor:pointer;
+}
+
+.header-user-actions .action-btn:-webkit-any(:nth-child(2),:nth-child(3)) {
+  display:none;
 }
 
 .nav-open-btn:hover{
@@ -485,12 +496,13 @@ main{
 .product-collection{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .product-collection .collection-item{
   transform: scale(1);
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
   margin: 10px 0;
 }
 
@@ -593,7 +605,6 @@ main{
   display:flex;
   flex-direction:column;
   overflow:auto hidden;
-  margin:30px 0;
 }
 
 
@@ -728,7 +739,7 @@ main{
 }
 
 .best-sellers-content .best-sellers-title{
-  font-size: var(--fs-5);
+  font-size: var(--fs-7);
   color:var(--black);
 }
 
@@ -839,7 +850,7 @@ main{
 
 
 /* FEATURES */
-.features{
+.feature-list{
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -850,6 +861,7 @@ main{
   color: var(--black);
   font-size: var(--fs-2);
   font-weight: var(--fw-600);
+  text-align:center;
 }
 
 .features .feature-row{
@@ -881,6 +893,10 @@ main{
   #OFFER
 \*-----------------------------------*/
 
+.offer-content{
+  margin-bottom:30px;
+
+}
 .offer-banner {
   display: grid;
   grid-template-columns: 0.7fr 1fr;
@@ -935,7 +951,12 @@ main{
   height:auto;
 }
 
-
+.btn-offer{
+  background:var(--black);
+  color:var(--white);
+  padding:10px;
+  font-size:var(--fs-6);
+}
 
 /*-----------------------------------*\
   #BLOG
@@ -965,9 +986,6 @@ main{
   object-fit:contain;
   object-position:center;
 }
-.card-banner{
-  margin-bottom:20px;
-}
 
 .blog-card .card-banner img { transition: var(--transition-2); }
 
@@ -978,7 +996,6 @@ main{
   transition: var(--transition-1);
   font-size: var(--fs-4);
   margin-bottom:20px;
-
 }
 
 .blog-card .card-title:is(:hover, :focus) { color: var(--hoockers-green); }
@@ -1072,12 +1089,13 @@ footer .container{
 
 .email-field:focus { border-color: var(--black); }
 
-.newsletter-form .btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
+.newsletter-form .btn-newsletter {
+  background:var(--black);
+  color:var(--white);
+  padding: 12px 18px;
+  margin:10px 0px;
+  border: var(--border-radius-sm);
+ }
 
 .copyright { font-size: var(--fs-7); }
 
@@ -1087,7 +1105,6 @@ footer .container{
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  margin-block-end: 20px;
 }
 
 .social-list {
