@@ -1090,7 +1090,7 @@ footer .container{
   background-color: var(--white);
   font-size: var(--fs-7);
   padding: 12px 18px;
-  padding-inline-end: 145px;
+  padding-inline-end: 45px;
   border: 1px solid var(--hoockers-green_20);
   border-radius: var(--radius-3);
   outline: none;
